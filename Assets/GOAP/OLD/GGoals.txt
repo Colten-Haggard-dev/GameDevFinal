@@ -1,0 +1,22 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+using StateDict = System.Collections.Generic.Dictionary<string, GState>;
+
+public static class GGoals
+{
+    public static readonly GGoal IdleGoal;
+    public static readonly GGoal PatrolGoal;
+
+    static GGoals()
+    {
+        StateDict idle_desired = new();
+        idle_desired["position"] = new(new Vector3(0, 0, 0), typeof(Vector3));
+
+        IdleGoal = new("idle", 1, idle_desired);
+
+        StateDict patrol_desired = new();
+        patrol_desired["position"] = new(new Vector3(Random.value * 5, Random.value * 5, Random.value * 5), typeof(Vector3));
+    }
+}

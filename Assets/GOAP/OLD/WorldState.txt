@@ -1,0 +1,35 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public struct LivingEntity
+{
+    public float health;
+    public float armor;
+    public GameObject entity;
+}
+
+public struct CoverPoint
+{
+    public Vector3 point;
+    public Vector3 dir;
+}
+
+public struct Prop
+{
+    public Vector3 pos;
+    public Rigidbody body;
+    public GameObject entity;
+}
+
+public struct Weapon
+{
+    public Vector3 pos;
+    public bool live;
+    public GameObject entity;
+}
+
+public static class WorldState
+{
+    
+}

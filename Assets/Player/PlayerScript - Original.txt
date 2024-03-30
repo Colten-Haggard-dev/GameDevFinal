@@ -1,0 +1,176 @@
+using System.Collections;
+using UnityEditor;
+using UnityEngine;
+
+public class PlayerScriptOld : MonoBehaviour
+{
+    [SerializeField] private Rigidbody  PlayerBody;
+    [SerializeField] private BoxCollider PlayerCollider;
+    [SerializeField] private Camera PlayerCamera;
+    [SerializeField] private GameObject CameraTarget;
+    [SerializeField] private GameObject Feet;
+    [SerializeField] private float MouseSensitivity = 1f;
+    [SerializeField] private float CamSpeed = 1f;
+    [SerializeField] private float MaxSpeed = 10f;
+    [SerializeField] private float Acceleration = 100f;
+    [SerializeField] private float JumpHeight = 2f;
+    [SerializeField] private LayerMask MovementMask;
+    [SerializeField] private float GroundDrag = 5f;
+    [SerializeField] private float AirDrag = 0.1f;
+    [SerializeField] private float Width = 1f;
+    [SerializeField] private float Height = 2f;
+    [SerializeField] private float CrouchDelay = 0.1f;
+    [SerializeField] private float JumpDelay = 10f;
+
+    private bool _useMouse = false;
+    private float _yaw = 0f;
+    private float _pitch = 0f;
+    private bool _isGrounded = false;
+    private bool _above = false;
+    private bool _jumping = false;
+    private Vector3 _posOffset = Vector3.zero;
+    private bool _jump = false;
+    private bool _crouch = false;
+    private float _crouchTimer = 0f;
+    private float _jumpTimer = 0f;
+    private float _curGroundMax = 1f;
+    private bool _isShrunk = false;
+
+    private string _curDebugText = "mona lisa";
+
+    private void GrabMouse()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        _useMouse = true;
+    }
+
+    private void ReleaseMouse()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        _useMouse = false;
+    }
+
+    private void ShrinkBody()
+    {
+        float half_height = Height / 2f;
+        PlayerCollider.size = new(Width, half_height, Width);
+        //PlayerCollider.center = new(0f, half_height, 0f);
+        CameraTarget.transform.localPosition = new(0f, 0.25f, 0f);
+        _isShrunk = true;
+        //_posOffset = new(0f, 1f, 0f);
+    }
+
+    private void UnshrinkBody()
+    {
+        PlayerCollider.size = new(Width, Height, Width);
+        //PlayerCollider.center = new(0f, 0f, 0f);
+        CameraTarget.transform.localPosition = new(0f, 0.75f, 0f);
+        _isShrunk = false;
+        //_posOffset = new(0, 0, 0);
+    }
+
+    private void OnEnable()
+    {
+        GrabMouse();
+    }
+
+    private void OnDisable()
+    {
+        ReleaseMouse();
+    }
+
+    // Update is called once per frame
+    private void Update()
+    {
+        if (!_useMouse)
+        {
+            return;
+        }
+
+        Vector2 mouse_delta = new(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
+        mouse_delta *= MouseSensitivity * Mathf.Clamp(Time.timeScale, 0f, 1f);
+        _pitch = Mathf.Clamp(_pitch - mouse_delta.y, -88, 88);
+        _yaw += mouse_delta.x;
+
+        _jump = Input.GetButton("Jump");
+        _crouch = Input.GetButton("Crouch");
+    }
+
+    private void FixedUpdate()
+    {
+        CameraTarget.transform.localRotation = Quaternion.Euler(_pitch, _yaw, 0f);
+        Feet.transform.localRotation = Quaternion.Euler(0f, _yaw, 0f);
+
+        float inputH = Input.GetAxis("Horizontal");
+        float inputV = Input.GetAxis("Vertical");
+
+        Vector3 half = new(4.5f, 0.05f, 4.5f);
+        Vector3 player_pos = PlayerBody.transform.position;
+        _isGrounded = Physics.BoxCast(player_pos, half, Vector3.down, Quaternion.identity, _curGroundMax, MovementMask.value, QueryTriggerInteraction.Ignore);
+        _above = Physics.BoxCast(player_pos, half, Vector3.up, Quaternion.identity, 1f, MovementMask.value, QueryTriggerInteraction.Ignore);
+
+        _jumping = !_isGrounded && _jumping;
+
+        if (_crouch && !_isShrunk)
+        {
+            _curGroundMax = 0.50f;
+            ShrinkBody();
+        }
+        else if (_isShrunk && _isGrounded && !_above && Time.time - _crouchTimer >= CrouchDelay)
+        {
+            UnshrinkBody();
+            _curGroundMax = 1f;
+            _crouchTimer = Time.time;
+
+            if (!_jumping)
+            {
+                PlayerBody.position += Vector3.up;
+            }
+            else
+            {
+                _jumping = false;
+            }
+        }
+
+        Vector3 velocity = new(inputH, 0, inputV);
+        velocity.Normalize();
+        velocity = Feet.transform.TransformDirection(velocity);
+        velocity.Normalize();
+
+        PlayerBody.drag = _isGrounded ? GroundDrag : AirDrag;
+        float target_max = _isShrunk ? MaxSpeed / 4 : MaxSpeed;
+        float input_on = Mathf.Clamp(Mathf.Abs(inputH) + Mathf.Abs(inputV), 0f, 1f);
+        float accel_ratio = (1 - Mathf.Clamp(PlayerBody.velocity.magnitude / target_max, 0f, 1f)) * input_on;
+        velocity *= Acceleration * accel_ratio * PlayerBody.drag;
+
+        //_curDebugText = "Jump Delay Over: " + (Time.time - _jumpTimer >= JumpDelay ? "True\n" : "False\n");
+        _curDebugText = "Time Between Jumps: " + (Time.time - _jumpTimer) + "\n";
+
+        if (_jump && _isGrounded && Time.time - _jumpTimer >= JumpDelay)
+        {
+            PlayerBody.AddRelativeForce(new Vector3(0, JumpHeight, 0), ForceMode.VelocityChange);
+            ShrinkBody();
+            _jumping = true;
+            _isGrounded = false;
+            _jumpTimer = Time.time;
+        }
+
+        PlayerBody.AddRelativeForce(velocity, ForceMode.Acceleration);
+
+        //_curDebugText += PlayerBody.velocity.ToString();
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.magenta;
+        Vector3 offset_pos = PlayerBody.transform.position + _posOffset - new Vector3(0f, 0.5f, 0f);
+        Gizmos.DrawWireCube(offset_pos, new Vector3(0.9f, 1.1f, 0.9f));
+        Gizmos.color = Color.white;
+
+        Vector3 look_dir_scaled = CameraTarget.transform.forward * 5f;
+        look_dir_scaled += CameraTarget.transform.position;
+        Handles.Label(look_dir_scaled, _curDebugText);
+    }
+}

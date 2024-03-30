@@ -1,0 +1,769 @@
+﻿{
+    "sig-sauer-p320-493356": {
+        "Version": "1.10.1822.1",
+        "Scene": {
+            "Name": true,
+            "SupportShaderSelect": false
+        },
+        "Export Directory": "C:/RLConverterServices/RLConverter/TempData/Convert/794cebc6bed1cd78/JICd202a9f63262b5339",
+        "Object": {
+            "sig-sauer-p320-493356": {
+                "Physics": {},
+                "Meshes": {
+                    "Sig_Sauer_P320_Compact_Bullet_002": {
+                        "Materials": {
+                            "Pistole_Sig_Sauer_P320_Compact_Bullet_01_Pbr": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Specular Color": [
+                                    127.5,
+                                    127.5,
+                                    127.5
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "./sig-sauer-p320-493356.fbm/Pistole_Sig_Sauer_P320_Compact_Bullet_01_Pbr_Diffuse.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "./sig-sauer-p320-493356.fbm/Pistole_Sig_Sauer_P320_Compact_Bullet_01_Pbr_Normal.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/sig-sauer-p320-493356/Sig_Sauer_P320_Compact_Bullet_001/Sig_Sauer_P320_Compact_Bullet_001/Pistole_Sig_Sauer_P320_Compact_Bullet_0_Pbr/Pistole_Sig_Sauer_P320_Compact_Bullet_0_Pbr_ao.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "MetallicAlpha": {
+                                        "Texture Path": "./textures/sig-sauer-p320-493356/Sig_Sauer_P320_Compact_Bullet_002/Sig_Sauer_P320_Compact_Bullet_002/Pistole_Sig_Sauer_P320_Compact_Bullet_01_Pbr/Pistole_Sig_Sauer_P320_Compact_Bullet_01_Pbr_MetallicAlpha.png"
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/sig-sauer-p320-493356/Sig_Sauer_P320_Compact_Bullet_001/Sig_Sauer_P320_Compact_Bullet_001/Pistole_Sig_Sauer_P320_Compact_Bullet_0_Pbr/Pistole_Sig_Sauer_P320_Compact_Bullet_0_Pbr_HDRP.png"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "Sig_Sauer_P320_Compact_Bullet_001": {
+                        "Materials": {
+                            "Pistole_Sig_Sauer_P320_Compact_Bullet_0_Pbr": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Specular Color": [
+                                    127.5,
+                                    127.5,
+                                    127.5
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "./sig-sauer-p320-493356.fbm/Pistole_Sig_Sauer_P320_Compact_Bullet_01_Pbr_Diffuse.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "./sig-sauer-p320-493356.fbm/Pistole_Sig_Sauer_P320_Compact_Bullet_01_Pbr_Normal.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/sig-sauer-p320-493356/Sig_Sauer_P320_Compact_Bullet_001/Sig_Sauer_P320_Compact_Bullet_001/Pistole_Sig_Sauer_P320_Compact_Bullet_0_Pbr/Pistole_Sig_Sauer_P320_Compact_Bullet_0_Pbr_ao.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "MetallicAlpha": {
+                                        "Texture Path": "./textures/sig-sauer-p320-493356/Sig_Sauer_P320_Compact_Bullet_001/Sig_Sauer_P320_Compact_Bullet_001/Pistole_Sig_Sauer_P320_Compact_Bullet_0_Pbr/Pistole_Sig_Sauer_P320_Compact_Bullet_0_Pbr_MetallicAlpha.png"
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/sig-sauer-p320-493356/Sig_Sauer_P320_Compact_Bullet_001/Sig_Sauer_P320_Compact_Bullet_001/Pistole_Sig_Sauer_P320_Compact_Bullet_0_Pbr/Pistole_Sig_Sauer_P320_Compact_Bullet_0_Pbr_HDRP.png"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "Pistole_Sig_Sauer_P320_Compact_Fuse_001": {
+                        "Materials": {
+                            "Pistole_Sig_Sauer_P320_Compact_01_Pbr": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Specular Color": [
+                                    127.5,
+                                    127.5,
+                                    127.5
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "./sig-sauer-p320-493356.fbm/Pistole_Sig_Sauer_P320_Compact_01_Pbr_Diffuse.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "./sig-sauer-p320-493356.fbm/Pistole_Sig_Sauer_P320_Compact_01_Pbr_Normal.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/sig-sauer-p320-493356/Pistole_Sig_Sauer_P320_Compact_Assambly/Pistole_Sig_Sauer_P320_Compact_Assambly_001/Pistole_Sig_Sauer_P320_Compact_1_Pbr/Pistole_Sig_Sauer_P320_Compact_1_Pbr_ao.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "MetallicAlpha": {
+                                        "Texture Path": "./textures/sig-sauer-p320-493356/Pistole_Sig_Sauer_P320_Compact_Fuse/Pistole_Sig_Sauer_P320_Compact_Fuse_001/Pistole_Sig_Sauer_P320_Compact_01_Pbr/Pistole_Sig_Sauer_P320_Compact_01_Pbr_MetallicAlpha.png"
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/sig-sauer-p320-493356/Pistole_Sig_Sauer_P320_Compact_Assambly/Pistole_Sig_Sauer_P320_Compact_Assambly_001/Pistole_Sig_Sauer_P320_Compact_1_Pbr/Pistole_Sig_Sauer_P320_Compact_1_Pbr_HDRP.png"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "Pistole_Sig_Sauer_P320_Compact_Trigger_001": {
+                        "Materials": {
+                            "Pistole_Sig_Sauer_P320_Compact_0_Pbr": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Specular Color": [
+                                    127.5,
+                                    127.5,
+                                    127.5
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "./sig-sauer-p320-493356.fbm/Pistole_Sig_Sauer_P320_Compact_01_Pbr_Diffuse.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "./sig-sauer-p320-493356.fbm/Pistole_Sig_Sauer_P320_Compact_01_Pbr_Normal.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/sig-sauer-p320-493356/Pistole_Sig_Sauer_P320_Compact_Assambly/Pistole_Sig_Sauer_P320_Compact_Assambly_001/Pistole_Sig_Sauer_P320_Compact_1_Pbr/Pistole_Sig_Sauer_P320_Compact_1_Pbr_ao.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "MetallicAlpha": {
+                                        "Texture Path": "./textures/sig-sauer-p320-493356/Sig_Sauer_P320_Compact_Bullet_003/Sig_Sauer_P320_Compact_Bullet_003/Pistole_Sig_Sauer_P320_Compact_Bullet_1_Pbr/Pistole_Sig_Sauer_P320_Compact_Bullet_1_Pbr_MetallicAlpha.png"
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/sig-sauer-p320-493356/Pistole_Sig_Sauer_P320_Compact_Assambly/Pistole_Sig_Sauer_P320_Compact_Assambly_001/Pistole_Sig_Sauer_P320_Compact_1_Pbr/Pistole_Sig_Sauer_P320_Compact_1_Pbr_HDRP.png"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "Pistole_Sig_Sauer_P320_Compact_Assambly_001": {
+                        "Materials": {
+                            "Pistole_Sig_Sauer_P320_Compact_1_Pbr": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Specular Color": [
+                                    127.5,
+                                    127.5,
+                                    127.5
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "./sig-sauer-p320-493356.fbm/Pistole_Sig_Sauer_P320_Compact_01_Pbr_Diffuse.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "./sig-sauer-p320-493356.fbm/Pistole_Sig_Sauer_P320_Compact_01_Pbr_Normal.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/sig-sauer-p320-493356/Pistole_Sig_Sauer_P320_Compact_Assambly/Pistole_Sig_Sauer_P320_Compact_Assambly_001/Pistole_Sig_Sauer_P320_Compact_1_Pbr/Pistole_Sig_Sauer_P320_Compact_1_Pbr_ao.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "MetallicAlpha": {
+                                        "Texture Path": "./textures/sig-sauer-p320-493356/Pistole_Sig_Sauer_P320_Compact_Assambly/Pistole_Sig_Sauer_P320_Compact_Assambly_001/Pistole_Sig_Sauer_P320_Compact_1_Pbr/Pistole_Sig_Sauer_P320_Compact_1_Pbr_MetallicAlpha.png"
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/sig-sauer-p320-493356/Pistole_Sig_Sauer_P320_Compact_Assambly/Pistole_Sig_Sauer_P320_Compact_Assambly_001/Pistole_Sig_Sauer_P320_Compact_1_Pbr/Pistole_Sig_Sauer_P320_Compact_1_Pbr_HDRP.png"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "Sig_Sauer_P320_Compact_Magazine_001": {
+                        "Materials": {
+                            "Pistole_Sig_Sauer_P320_Compact_Magazine_01_Pbr": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Specular Color": [
+                                    127.5,
+                                    127.5,
+                                    127.5
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "./sig-sauer-p320-493356.fbm/Pistole_Sig_Sauer_P320_Compact_Magazine_01_Pbr_Diffuse.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "./sig-sauer-p320-493356.fbm/Pistole_Sig_Sauer_P320_Compact_Magazine_01_Pbr_Normal.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/sig-sauer-p320-493356/Sig_Sauer_P320_Compact_Magazine/Sig_Sauer_P320_Compact_Magazine_001/Pistole_Sig_Sauer_P320_Compact_Magazine_01_Pbr/Pistole_Sig_Sauer_P320_Compact_Magazine_01_Pbr_ao.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "MetallicAlpha": {
+                                        "Texture Path": "./textures/sig-sauer-p320-493356/Sig_Sauer_P320_Compact_Magazine/Sig_Sauer_P320_Compact_Magazine_001/Pistole_Sig_Sauer_P320_Compact_Magazine_01_Pbr/Pistole_Sig_Sauer_P320_Compact_Magazine_01_Pbr_MetallicAlpha.png"
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/sig-sauer-p320-493356/Sig_Sauer_P320_Compact_Magazine/Sig_Sauer_P320_Compact_Magazine_001/Pistole_Sig_Sauer_P320_Compact_Magazine_01_Pbr/Pistole_Sig_Sauer_P320_Compact_Magazine_01_Pbr_HDRP.png"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "Pistole_Sig_Sauer_P320_Compact_001": {
+                        "Materials": {
+                            "Pistole_Sig_Sauer_P320_Compact_2_Pbr": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Specular Color": [
+                                    127.5,
+                                    127.5,
+                                    127.5
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "./sig-sauer-p320-493356.fbm/Pistole_Sig_Sauer_P320_Compact_01_Pbr_Diffuse.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "./sig-sauer-p320-493356.fbm/Pistole_Sig_Sauer_P320_Compact_01_Pbr_Normal.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/sig-sauer-p320-493356/Pistole_Sig_Sauer_P320_Compact_Assambly/Pistole_Sig_Sauer_P320_Compact_Assambly_001/Pistole_Sig_Sauer_P320_Compact_1_Pbr/Pistole_Sig_Sauer_P320_Compact_1_Pbr_ao.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "MetallicAlpha": {
+                                        "Texture Path": "./textures/sig-sauer-p320-493356/Pistole_Sig_Sauer_P320_Compact/Pistole_Sig_Sauer_P320_Compact_001/Pistole_Sig_Sauer_P320_Compact_2_Pbr/Pistole_Sig_Sauer_P320_Compact_2_Pbr_MetallicAlpha.png"
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/sig-sauer-p320-493356/Pistole_Sig_Sauer_P320_Compact_Assambly/Pistole_Sig_Sauer_P320_Compact_Assambly_001/Pistole_Sig_Sauer_P320_Compact_1_Pbr/Pistole_Sig_Sauer_P320_Compact_1_Pbr_HDRP.png"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "Sig_Sauer_P320_Compact_Bullet_003": {
+                        "Materials": {
+                            "Pistole_Sig_Sauer_P320_Compact_Bullet_1_Pbr": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Specular Color": [
+                                    127.5,
+                                    127.5,
+                                    127.5
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "./sig-sauer-p320-493356.fbm/Pistole_Sig_Sauer_P320_Compact_Bullet_01_Pbr_Diffuse.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "./sig-sauer-p320-493356.fbm/Pistole_Sig_Sauer_P320_Compact_Bullet_01_Pbr_Normal.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/sig-sauer-p320-493356/Sig_Sauer_P320_Compact_Bullet_001/Sig_Sauer_P320_Compact_Bullet_001/Pistole_Sig_Sauer_P320_Compact_Bullet_0_Pbr/Pistole_Sig_Sauer_P320_Compact_Bullet_0_Pbr_ao.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "MetallicAlpha": {
+                                        "Texture Path": "./textures/sig-sauer-p320-493356/Sig_Sauer_P320_Compact_Bullet_003/Sig_Sauer_P320_Compact_Bullet_003/Pistole_Sig_Sauer_P320_Compact_Bullet_1_Pbr/Pistole_Sig_Sauer_P320_Compact_Bullet_1_Pbr_MetallicAlpha.png"
+                                    },
+                                    "HDRP": {
+                                        "Texture Path": "./textures/sig-sauer-p320-493356/Sig_Sauer_P320_Compact_Bullet_001/Sig_Sauer_P320_Compact_Bullet_001/Pistole_Sig_Sauer_P320_Compact_Bullet_0_Pbr/Pistole_Sig_Sauer_P320_Compact_Bullet_0_Pbr_HDRP.png"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

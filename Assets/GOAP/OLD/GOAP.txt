@@ -1,0 +1,70 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEngine;
+
+using StateDict = System.Collections.Generic.Dictionary<string, GState>;
+public struct GState
+{
+    public object value;
+    public Type type;
+
+    public readonly bool CheckState(GState state)
+    {
+        object s_value = state.value;
+        Type s_type = state.type;
+
+        return s_value.ConvertTo(s_type) == value.ConvertTo(type);
+    }
+
+    public GState(object value, Type type)
+    {
+        this.value = value;
+        this.type = type;
+
+        Debug.Log(value.GetType());
+    }
+}
+
+public struct GGoal
+{
+    public readonly string name;
+    public int priority;
+    public StateDict desired_state;
+
+    public GGoal(string name, int priority, StateDict state)
+    {
+        this.name = name;
+        this.priority = priority;
+        desired_state = state;
+    }
+
+    public readonly bool IsValid(StateDict state)
+    {
+        foreach (string key in state.Keys)
+        {
+            if (!state[key].CheckState(state[key]))
+                return true;
+        }
+
+        return false;
+    }
+}
+
+public static class GOAP
+{
+    public static readonly StateDict BaseDict = new();
+    public static readonly string LIVING_ENTS = "living_entities";
+    public static readonly string COVER_POINTS = "cover_points";
+    public static readonly string PROPS = "props";
+    public static readonly string WEAPONS = "weapons";
+
+    static GOAP()
+    {
+        BaseDict[LIVING_ENTS] = new GState(new List<LivingEntity>(), typeof(List<LivingEntity>));
+        BaseDict[COVER_POINTS] = new GState(new List<CoverPoint>(), typeof(List<CoverPoint>));
+        BaseDict[PROPS] = new GState(new List<Prop>(), typeof(List<Prop>));
+        BaseDict[WEAPONS] = new GState(new List<Weapon>(), typeof(List<Weapon>));
+    }
+}
